@@ -1,4 +1,4 @@
-    var content = document.getElementById('content');
+    var content = document.getElementById('ori');
 
     var xhr = new XMLHttpRequest();
 
@@ -8,13 +8,13 @@
             var data = JSON.parse(xhr.responseText);
             if(data.status == 'ok'){
 
-                var output = '<h1>'+data.feed.title+'</h1>';
+                var output = '<h3>'+data.feed.title+'</h3>';
 
                 for(var i=0;i<data.items.length;++i){
 
-                    output += '<p><h3><a href="' +
+                    output += '<p><h4><a href="' +
                     data.items[i].link + '" >' +
-                    data.items[i].title + '</h3></a><br />' +
+                    data.items[i].title + '</h4></a><br />' +
                     data.items[i].description + '... </p>';
 
                 }
