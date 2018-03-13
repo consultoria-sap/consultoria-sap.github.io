@@ -658,7 +658,7 @@ acronym[title].no-reformat:after {
 .no-reformat a:after {
   content: ''; }
 
-*/ Desde aquí agrego lineas */
+/* Desde aquí agrego lineas */
 footer {    
 position: fixed;
 bottom: 0;
