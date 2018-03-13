@@ -665,8 +665,6 @@ bottom: 0;
 background-color: lightgray;
 border-top-style: groove;
 border-top-color: cornsilk;
-border-radius: unset;
-text-align: end;
 margin: 0 40px 0 40px;
--webkit-text-stroke-width: thin;
+width: -webkit-fill-available;
 }
