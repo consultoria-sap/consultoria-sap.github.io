@@ -35,6 +35,8 @@ body {
      */
 article,
 aside,
+header,
+footer,
 nav,
 section {
   display: block; }
