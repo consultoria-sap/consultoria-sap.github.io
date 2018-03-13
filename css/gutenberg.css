@@ -665,6 +665,10 @@ bottom: 0;
 background-color: lightgray;
 border-top-style: groove;
 border-top-color: cornsilk;
-margin: 0 40px 0 40px;
+margin: 10px 40px 0 40px;
 width: -webkit-fill-available;
+}
+
+article {
+margin-bottom: 5px;
 }
