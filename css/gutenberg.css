@@ -426,7 +426,7 @@ p:first-line,
 div:first-line,
 blockquote:first-line,
 li:first-line {
-  background: transparent !important;
+  background: transparent;
   box-shadow: none !important;
   text-shadow: none !important; }
 
