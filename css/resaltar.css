@@ -1,0 +1,113 @@
+.alerta {
+    background: #fff6bf url(../img/error.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #ffd324;
+    border-bottom: 2px solid #ffd324;
+    color: #000
+}
+
+.error {
+    background: #ffdec0 url(img/error_32.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 60px;
+    border-top: 2px dotted #ff2b24;
+    border-bottom: 2px dotted #ff2b24;
+    color: #5a5a5a
+}
+
+.info {
+    background: #e7f9f8 url(img/info.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #b5d4fe;
+    border-bottom: 2px solid #b5d4fe;
+    color: #000
+}
+
+.descarga {
+    background: #fbc895 url(img/descargared.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #f7ab75;
+    border-bottom: 2px solid #f7ab75;
+    color: #000
+}
+
+.descarga a {
+    color: #e15f13;
+    text-decoration: none;
+    border-bottom: 1px dotted #e15f13
+}
+
+.descarga2 {
+    background: #f7fabe url(img/descarga.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #dfe786;
+    border-bottom: 2px solid #dfe786;
+    color: #000
+}
+
+.descarga2 a {
+    color: #4b4b4b;
+    text-decoration: none;
+    border-bottom: 1px dotted #444
+}
+
+.importante {
+    background: #fdd1c5 url(img/importante.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #fbab95;
+    border-bottom: 2px solid #fbab95;
+    color: #000
+}
+
+.nota {
+    background: #faf9f7 url(img/nota.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #f2efea;
+    border-bottom: 2px solid #f2efea;
+    color: #000
+}
+
+.fuente {
+    background: #f7f9e5 url(img/via.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #dbdccd;
+    border-bottom: 2px solid #dbdccd;
+    color: #000
+}
+
+.fuente a {
+    color: #4b4b4b;
+    text-decoration: none;
+    border-bottom: 1px dotted #444
+}
+
+.nuevo {
+    background: #fff6bf url(img/new.gif) center no-repeat;
+    background-position: 15px 50%;
+    text-align: left;
+    padding: 5px 20px 5px 45px;
+    border-top: 2px solid #fbc383;
+    border-bottom: 2px solid #fbc383;
+    color: #000
+}
+
+.nuevo a {
+    color: #e15f13;
+    text-decoration: none;
+    border-bottom: 1px dotted #e15f13
+}
