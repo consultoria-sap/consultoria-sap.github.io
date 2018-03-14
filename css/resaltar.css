@@ -9,7 +9,7 @@
 }
 
 .error {
-    background: #ffdec0 url(img/error_32.gif) center no-repeat;
+    background: #ffdec0 url(../img/error_32.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 60px;
@@ -19,7 +19,7 @@
 }
 
 .info {
-    background: #e7f9f8 url(img/info.gif) center no-repeat;
+    background: #e7f9f8 url(../img/info.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -29,7 +29,7 @@
 }
 
 .descarga {
-    background: #fbc895 url(img/descargared.gif) center no-repeat;
+    background: #fbc895 url(../img/descargared.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -45,7 +45,7 @@
 }
 
 .descarga2 {
-    background: #f7fabe url(img/descarga.gif) center no-repeat;
+    background: #f7fabe url(../img/descarga.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -61,7 +61,7 @@
 }
 
 .importante {
-    background: #fdd1c5 url(img/importante.gif) center no-repeat;
+    background: #fdd1c5 url(../img/importante.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -71,7 +71,7 @@
 }
 
 .nota {
-    background: #faf9f7 url(img/nota.gif) center no-repeat;
+    background: #faf9f7 url(../img/nota.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -81,7 +81,7 @@
 }
 
 .fuente {
-    background: #f7f9e5 url(img/via.gif) center no-repeat;
+    background: #f7f9e5 url(../img/via.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
@@ -97,7 +97,7 @@
 }
 
 .nuevo {
-    background: #fff6bf url(img/new.gif) center no-repeat;
+    background: #fff6bf url(../img/new.gif) center no-repeat;
     background-position: 15px 50%;
     text-align: left;
     padding: 5px 20px 5px 45px;
