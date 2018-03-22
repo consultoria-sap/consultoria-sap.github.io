@@ -1,1 +1,3 @@
-ins .adsbygoogle {display:none;}
+ins .adsbygoogle, div #sidebar, #exit {display:none !important;}
+// #exit {display:none !important;}
+// div #sidebar {display:none !important;}
