@@ -32,14 +32,13 @@ body {
 
 /**
      * Add the correct display in IE 9-.
+     * OLR: quité aside
      */
 article,
-aside,
 header,
 footer,
 nav,
-section {
-  display: block; }
+section {display: block;}
 
 /**
      * Correct the font size and margin on `h1` elements within `section` and
@@ -673,3 +672,4 @@ width: -webkit-fill-available; }
 article {
 margin-bottom: 5px; }
 
+aside {display:none !important;}
