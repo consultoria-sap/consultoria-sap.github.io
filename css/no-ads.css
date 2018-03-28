@@ -1,3 +1,1 @@
-ins .adsbygoogle, div #sidebar, #exit {display:none !important;}
-// #exit {display:none !important;}
-// div #sidebar {display:none !important;}
+ins .adsbygoogle, div #sidebar, #exit, .emoji, #emoji, img .emoji {display:none !important;}
