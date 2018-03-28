@@ -662,7 +662,8 @@ bottom: 0;
 background-color: lightgray;
 border-top-style: groove;
 border-top-color: cornsilk;
-margin: 10px 40px 0 40px;
+margin: 10px 40px -2px 200px;
+z-index: -10;
 width: -webkit-fill-available; }
 
 article {
