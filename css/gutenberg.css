@@ -629,10 +629,6 @@ body {
   padding-right: 1.8cm;
   padding-top: 2.54cm; }
 
-a[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
-  content: " (" attr(href) ")";
-  font-size: 80%; }
-
 abbr[title]:after,
 acronym[title]:after {
   content: " (" attr(title) ")"; }
@@ -673,3 +669,8 @@ article {
 margin-bottom: 5px; }
 
 aside {display:none !important;}
+
+/* eliminé el a[href... y pasé a class link, para evitar que ponga enlace en todos los enlaces al imprimir. */
+a.link[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
+  content: " (" attr(href) ")";
+  font-size: 80%; }
