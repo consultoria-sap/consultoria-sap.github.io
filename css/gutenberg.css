@@ -671,6 +671,6 @@ margin-bottom: 5px; }
 aside {display:none !important;}
 
 /* eliminé el a[href... y pasé a class link, para evitar que ponga enlace en todos los enlaces al imprimir. */
-a.link[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
+a.link[href^='http://']:after, a.link[href^='https://']:after, a.link[href^='ftp://']:after {
   content: " (" attr(href) ")";
   font-size: 80%; }
