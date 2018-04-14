@@ -1,7 +1,7 @@
   var myList = document.querySelector('#lista');
   var Init = { method: 'GET',
                mode: 'cors' };
-  var myRequest = new Request('https://m.consultoria-sap.com/json/aportes.json',Init);
+  var myRequest = new Request('https://consultoria-sap.github.io/js/aportes.json',Init);
 fetch(myRequest)
 .then(function(response) { return response.json(); })
 .then(function(data) {
