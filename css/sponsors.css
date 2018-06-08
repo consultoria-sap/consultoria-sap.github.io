@@ -51,7 +51,45 @@ span {
   font-size: 14pt;
 }
 
+.fondo.blue {
+  color: #FFF;
+  background-color: #36f
+}
 
+.fondo.red {
+  color: #FFF;
+  background-color: #dc4437
+}
+
+.fondo.green {
+  color: #FFF;
+  background-color: #64b044
+}
+
+.fondo.yellow {
+  color: #505050;
+  background-color: #f6eb3b
+}
+
+.fondo.purple {
+  color: #FFF;
+  background-color: #7e3795
+}
+
+.fondo.darkred {
+  color: #FFF;
+  background-color: #a61d4b
+}
+
+.fondo.brown {
+  color: #FFF;
+  background-color: #795547
+}
+
+.fondo.grey {
+  color: #505050;
+  background-color: #ccc
+}
 
 .fondo.dark-grey {
   color: #FFF;
@@ -77,4 +115,3 @@ span {
   color: #FFF;
   background-color: #e57368
 }
-
