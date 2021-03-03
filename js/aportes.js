@@ -7,7 +7,7 @@ fetch(myRequest)
 .then(function(data) {
     for (var i = 0; i < data.topic_list.topics.length; i++) {
       var listItem = document.createElement('li');
-      listItem.innerHTML = '<strong>' + data.topic_list.topics[i].title + '</strong>;
+      listItem.innerHTML = '<strong>' + data.topic_list.topics[i].title + '</strong>';
       myList.appendChild(listItem);
     }
   });
