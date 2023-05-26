@@ -18,9 +18,9 @@ El presente artículo es para dejar en claro, que se responderán todas las cons
 
 1. Hayan sido enviadas a nuestro foro de ayuda.
 1. Prestar atención a las distintas secciones
-    *   **[Foro para consultas](http://foros.consultoria-sap.com/c/consultas-sap "Foro Consultas SAP - Consultoria")**
-    *   **[Foro para solicitudes](http://foros.consultoria-sap.com/c/manuales-sap "Foro Manuales SAP - Consultoria")** (ver _[cómo solicitar material](http://foros.consultoria-sap.com/t/como-solicitar-manuales-o-descargas-sap/14 "Norma: cómo solicitar material SAP gratis")_ \- se deben cumplir los pasos de éstas normas)
-    *   **IMPORTANTE:** por tiempo indeterminado no se recibirán más correos electrónicos con consultas y/o solicitudes de material.. **[Más info](http://www.consultoria-sap.com/2014/12/problemas-con-los-correos-electronicos.html "Consultas SAP gratis vía correo electrónico")**.
+    *   **[Foro para consultas](https://foros.consultoria-sap.com/c/consultas-sap "Foro Consultas SAP - Consultoria")**
+    *   **[Foro para solicitudes](https://foros.consultoria-sap.com/c/manuales-sap "Foro Manuales SAP - Consultoria")** (ver _[cómo solicitar material](https://foros.consultoria-sap.com/t/como-solicitar-manuales-o-descargas-sap/14 "Norma: cómo solicitar material SAP gratis")_ \- se deben cumplir los pasos de éstas normas)
+    *   **IMPORTANTE:** por tiempo indeterminado no se recibirán más correos electrónicos con consultas y/o solicitudes de material.. **[Más info](https://www.consultoria-sap.com/2014/12/problemas-con-los-correos-electronicos.html "Consultas SAP gratis vía correo electrónico")**.
 1. **En caso de solicitud de material**, se deberá citar el enlace (es decir, la URL) de nuestro artículo donde compartimos ese material. **Sin excepción.**
 1. El correo personal que usen para registrarse en el foro debe estar suscrito a nuestro _boletín #1 de SAP_.
 1. Haya trato amable, "buena onda" y estén dispuestos a conversar.
@@ -32,7 +32,7 @@ El presente artículo es para dejar en claro, que se responderán todas las cons
 
 La idea original de nuestro sitio web era compartir el conocimiento para que cuando alguien tenga el mismo problema, lo encuentre.  
   
-Pueden visitar el foro cuando lo deseen: **[Foro de Consultoria-SAP](http://foros.consultoria-sap.com/ "Comunidad de Ayuda ERP SAP")**  
+Pueden visitar el foro cuando lo deseen: **[Foro de Consultoria-SAP](https://foros.consultoria-sap.com/ "Comunidad de Ayuda ERP SAP")**  
   
 Por favor regístrense en la comunidad usando su email personal, el mismo email con el que se han suscripto a ésta web. \[_[Ver cumplimiento RGPD](https://www.consultoria-sap.com/p/gdpr-rgpd.html)_\]
 
@@ -72,7 +72,7 @@ En tal situación, se analizará bien qué es lo que piden y por qué razones lo
 **Casos "urgentes", necesidades puntuales**  
 En consultoría estamos acostumbrados a necesitar manuales de ciertas cosas cuando los problemas del ERP superan nuestros conocimientos. Entonces, es importante tener en cuenta que en la comunidad hemos contemplado esas situaciones.  
   
-Si tienes un caso urgente, donde necesitas "x" manual y no tienes tiempo para cumplir las normas de la comunidad, puedes [sumarte como "suscriptor" a la comunidad](http://foros.consultoria-sap.com/t/suscripciones-mensuales/6596 "Membresía SAP - Consultoria"), para que te enviemos el material que pides.  
+Si tienes un caso urgente, donde necesitas "x" manual y no tienes tiempo para cumplir las normas de la comunidad, puedes [sumarte como "suscriptor" a la comunidad](https://foros.consultoria-sap.com/t/suscripciones-mensuales/6596 "Membresía SAP - Consultoria"), para que te enviemos el material que pides.  
 
   
 
