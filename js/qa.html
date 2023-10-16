@@ -335,31 +335,21 @@
 
         <!-- v2 script fetch ini -->
         <script>
-            const loadJsonButton = document.getElementById('loadJsonButton');
-            const jsonResult = document.getElementById('jsonResult');
-      
-            loadJsonButton.addEventListener('click', () => {
-              const jsonUrl = document.getElementById('jsonUrl').value;
-      
-              if (!jsonUrl) {
-                alert('Por favor, ingrese una URL válida.');
-                return;
-              }
-      
-              fetch(jsonUrl)
-                .then((response) => {
-                  if (!response.ok) {
-                    throw new Error('No se pudo cargar el JSON.');
-                  }
-                  return response.json();
-                })
-                .then((data) => {
-                  jsonResult.textContent = JSON.stringify(data, null, 2);
-                })
-                .catch((error) => {
-                  jsonResult.textContent = 'Error: ' + error.message;
-                });
-            });
+        var myList = document.querySelector('#lista');
+        var Init = { method: 'GET',
+                    mode: 'cors' };
+        var myRequest = new Request('https://consultoria-sap.github.io/js/qa.json',Init);
+        fetch(myRequest)
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            var titulo = data.post_stream.title;
+        // for (var i = 0; i < data.post_stream.posts.length; i++) {
+        //     var listItem = document.createElement('li');
+        //     listItem.innerHTML = '<strong>' + data.topic_list.topics[i].title + '</strong>';
+        //     myList.appendChild(listItem);
+        // }
+        console.log(titulo);
+        });
           </script>
         <!-- v2 script fetch fin -->
     <!-- Script Generar HTML fin -->
@@ -368,21 +358,3 @@
 </body>
 
 </html>
-
-<!--// EL QUE PREGUNTA
-     <div class='comm-autor'>
-    JuanaG
-   </div>
-   <div class='triangle-border top'>
-   contenido de lo que dijo
-   </div> 
-   
-   EL que responde
-
-<div class='triangle-border'>
-comentario aquí</div>
-<div class='comm-comm'>
-autor
-</div>
-   
-   //-->
