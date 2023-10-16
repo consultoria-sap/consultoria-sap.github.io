@@ -9,11 +9,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 <body>
-<div class="container">
-    <textarea id="jsonUrl" placeholder="Ingrese la URL del JSON"></textarea>
-    <button id="loadJsonButton">Cargar JSON</button>
-    <pre id="jsonResult"></pre>
-</div>
 
 <!-- v1 -->
     <div class="container-fluid">
@@ -27,6 +22,8 @@
 
     <div class="container">
         <form class="form-control">
+            <input type="button" value="Rellenar formulario" onclick="rellenarFormulario()">
+
             <div class="mb-3">
                 <label for="pregunta" class="form-label">Pregunta Principal</label>
                 <textarea id="pregunta" name="pregunta" cols="40" rows="3" class="form-control"
@@ -333,28 +330,53 @@
         });
         </script>
 
-        <!-- v2 script fetch ini -->
-        <script>
-        var myList = document.querySelector('#lista');
-        var Init = { method: 'GET',
-                    mode: 'cors' };
-        var myRequest = new Request('https://consultoria-sap.github.io/js/qa.json',Init);
-        fetch(myRequest)
-        .then(function(response) { return response.json(); })
-        .then(function(data) {
-            var titulo = data.post_stream.title;
-        // for (var i = 0; i < data.post_stream.posts.length; i++) {
-        //     var listItem = document.createElement('li');
-        //     listItem.innerHTML = '<strong>' + data.topic_list.topics[i].title + '</strong>';
-        //     myList.appendChild(listItem);
-        // }
-        console.log(titulo);
-        });
-          </script>
-        <!-- v2 script fetch fin -->
     <!-- Script Generar HTML fin -->
+
+            <!-- v2 script fetch ini -->
+            <script>
+                function rellenarFormulario() {
+                // URL del archivo JSON
+                var url = "https://consultoria-sap.github.io/js/qa.json"; // 
+        
+                // Realizar una solicitud fetch para obtener el archivo JSON
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById("preguntador").value = data.post_stream.posts[0].name;
+                    // Acceder a los valores del JSON y asignarlos a los campos del formulario
+                    // document.getElementById("nombre").value = data.post_stream.posts[0].name;
+                    // document.getElementById("apellido").value = data.post_stream.posts[0].username;
+                    // Supongo que quieres mostrar la longitud de "cooked" en el campo de edad
+                    // document.getElementById("edad").value = data.post_stream.posts[0].cooked.length;
+                    })
+                    .catch(error => {
+                    console.error("Error al cargar el archivo JSON: " + error);
+                    });
+                }
+        
+                  </script>
+                <!-- v2 script fetch fin -->
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+<!--// EL QUE PREGUNTA
+     <div class='comm-autor'>
+    JuanaG
+   </div>
+   <div class='triangle-border top'>
+   contenido de lo que dijo
+   </div> 
+   
+   EL que responde
+
+<div class='triangle-border'>
+comentario aquí</div>
+<div class='comm-comm'>
+autor
+</div>
+   
+   //-->
