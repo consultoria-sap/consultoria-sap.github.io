@@ -343,11 +343,9 @@
                     .then(response => response.json())
                     .then(data => {
                         document.getElementById("preguntador").value = data.post_stream.posts[0].name;
-                    // Acceder a los valores del JSON y asignarlos a los campos del formulario
-                    // document.getElementById("nombre").value = data.post_stream.posts[0].name;
-                    // document.getElementById("apellido").value = data.post_stream.posts[0].username;
-                    // Supongo que quieres mostrar la longitud de "cooked" en el campo de edad
-                    // document.getElementById("edad").value = data.post_stream.posts[0].cooked.length;
+                        document.getElementById("pregunta").value = data.post_stream.posts[0].cooked;
+                        document.getElementById("respondedor-1").value = data.post_stream.posts[1].name;
+                        document.getElementById("respuesta1").value = data.post_stream.posts[0].cooked;
                     })
                     .catch(error => {
                     console.error("Error al cargar el archivo JSON: " + error);
