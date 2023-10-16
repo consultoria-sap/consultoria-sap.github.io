@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[CSAP] Pregunta y Respuestas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<body>
+<div class="container">
+    <textarea id="jsonUrl" placeholder="Ingrese la URL del JSON"></textarea>
+    <button id="loadJsonButton">Cargar JSON</button>
+    <pre id="jsonResult"></pre>
+</div>
+
+<!-- v1 -->
+    <div class="container-fluid">
+        <h3>Para copiar y pegar al Contenido</h3>
+        <div class="form-floating">
+        <textarea id="resultado" class="form-control" readonly style="height: 200px;"></textarea>
+        </div>
+    </div>
+
+    <br /><br />
+
+    <div class="container">
+        <form class="form-control">
+            <div class="mb-3">
+                <label for="pregunta" class="form-label">Pregunta Principal</label>
+                <textarea id="pregunta" name="pregunta" cols="40" rows="3" class="form-control"
+                    aria-describedby="preguntaHelpBlock" required="required">Datos de ejemplo pregunta completa bla bla bla</textarea>
+                <div id="preguntaHelpBlock" class="form-text text-muted">
+                    Pegar la consulta principal aquí.
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="preguntador" name="preguntador" placeholder="¿Quién preguntó?" type="text"
+                class="form-control" required="required" value="Preguntador Waldo">
+            </div>
+
+            <div class="container"">
+                <div class="mb-3">
+                    <label for="respuesta1" class="form-label">Respuesta #1</label>
+                    <textarea id="respuesta1" name="respuesta1" cols="40" rows="5" class="form-control"
+                    required="required">Datos de Ejemplo (respuesta 1)</textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-1" name="respondedor-1" placeholder="¿Quién respondió?" type="text"
+                    class="form-control" required="required" value="Respondedor Pedro1">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-1">
+                    <label class="form-check-label" for="solucion-1">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+
+            <!-- Respuesta #2 ini -->
+            <div class="container">
+                <div class="mb-3">
+                    <label for="respuesta2" class="form-label">Respuesta #2</label>
+                    <textarea id="respuesta2" name="respuesta2" cols="40" rows="5" class="form-control">
+                    </textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-2" name="respondedor-2" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-2">
+                    <label class="form-check-label" for="solucion-2">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #2 fin -->
+
+            <!-- Respuesta #3 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta3" class="form-label">Respuesta #3</label>
+                    <textarea id="respuesta3" name="respuesta3" cols="40" rows="5" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-3" name="respondedor-3" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-3">
+                    <label class="form-check-label" for="solucion-3">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #3 fin -->
+
+            <!-- Respuesta #4 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta4" class="form-label">Respuesta #4</label>
+                    <textarea id="respuesta4" name="respuesta4" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-4" name="respondedor-4" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-4">
+                    <label class="form-check-label" for="solucion-4">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #4 fin -->
+            <!-- Respuesta #5 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta5" class="form-label">Respuesta #5</label>
+                    <textarea id="respuesta5" name="respuestaA" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-5" name="respondedor-5" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-5">
+                    <label class="form-check-label" for="solucion-5">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #5 fin -->
+            <!-- Respuesta #6 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta6" class="form-label">Respuesta #6</label>
+                    <textarea id="respuesta6" name="respuesta6" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-6" name="respondedor-6" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-6">
+                    <label class="form-check-label" for="solucion-6">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #6 fin -->
+            <!-- Respuesta #7 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta7" class="form-label">Respuesta #7</label>
+                    <textarea id="respuesta7" name="respuesta7" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-7" name="respondedor-7" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-7">
+                    <label class="form-check-label" for="solucion-7">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #7 fin -->
+            <!-- Respuesta #8 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta8" class="form-label">Respuesta #8</label>
+                    <textarea id="respuesta8" name="respuesta8" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-8" name="respondedor-8" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-8">
+                    <label class="form-check-label" for="solucion-8">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #8 fin -->
+            <!-- Respuesta #9 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta9" class="form-label">Respuesta #9</label>
+                    <textarea id="respuesta9" name="respuesta9" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-9" name="respondedor-9" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-9">
+                    <label class="form-check-label" for="solucion-9">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #9 fin -->
+            <!-- Respuesta #10 ini -->
+            <div class="container d-lg-none d-xl-none @media (min-width: 992px)">
+                <div class="mb-3">
+                    <label for="respuesta10" class="form-label">Respuesta #10</label>
+                    <textarea id="respuesta10" name="respuesta10" cols="40" rows="5" class="form-control"
+                    ></textarea>
+                </div>
+                <div class="mb-3">
+                    <input id="respondedor-10" name="respondedor-10" placeholder="¿Quién respondió?" type="text"
+                    class="form-control">
+                </div>
+                <div class="form-check form-switch form-check-reverse">
+                    <input class="form-check-input" type="checkbox" id="solucion-10">
+                    <label class="form-check-label" for="solucion-10">
+                        ¿Es SOLUCION?
+                    </label>
+                </div>
+            </div>
+            <!-- Respuesta #10 fin -->
+
+
+            <div class="mb-3"> 
+                <button id="generarHTML" class="btn btn-primary">Generar HTML</button> <!-- name="submit" type="submit"  -->
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Globales
+            var datosRespuestas = {};
+            var datosRespondedores = {};
+
+            // Obtener el botón "Generar HTML" por su ID
+            var generarHTMLButton = document.getElementById("generarHTML");
+        
+            generarHTMLButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Evitar que el formulario se envíe
+        
+                // Obtener los valores del form ingresado por el usuario
+                var pregunta1 = document.getElementById("pregunta").value;
+                var preguntador1 = document.getElementById("preguntador").value;
+                
+                // Como las respuestas son varias, trato un bucle para respuesta-x
+                var respuesta = document.querySelectorAll('textarea[id^="respuesta"]');
+                var nonEmptyRespuesta = Array.from(respuesta).filter(function(respuesta) {
+                    return respuesta.value.trim() !== "";
+                });
+                
+                // Crear un objeto para almacenar los datos de cada respuesta
+                // var datosRespuestas = {};
+        
+                for (var i = 0; i < nonEmptyRespuesta.length; i++) {
+                    var dRespuesta = nonEmptyRespuesta[i].value;
+                    var idRespuesta = nonEmptyRespuesta[i].id;
+                    datosRespuestas[idRespuesta] = dRespuesta;
+                    //htmlRespuesta += "\n<p id='" + idRespuesta + "'>\n" + datoRespuesta + "\n</p>\n";
+                }
+
+                    // Imprimir datosRespuestas en la consola
+                    for (var clave in datosRespuestas) {
+                    if (datosRespuestas.hasOwnProperty(clave)) {
+                    console.log("Clave: " + clave + ", Valor: " + datosRespuestas[clave]);
+                    }
+}
+                
+                // Bucle también para los distintos respondedores (autores)
+                // son input id respondedor-X
+                var respondedor = document.querySelectorAll('input[id^="respondedor"]');
+                var nonEmptyRespondedor = Array.from(respondedor).filter(function(respondedor) {
+                    return respondedor.value.trim() !== "";
+                });
+                
+                // Crear un objeto para almacenar los datos de cada respuesta
+                // var datosRespondedores = {};
+        
+                for (var i = 0; i < nonEmptyRespondedor.length; i++) {
+                    var dRespondedor = nonEmptyRespondedor[i].value;
+                    var idRespondedor = nonEmptyRespondedor[i].id;
+                    datosRespondedores[idRespondedor] = dRespondedor;
+                    //htmlRespondedor += "\n<p id='" + idRespondedor + "'>\n" + datoRespondedor + "\n</p>\n";
+
+                }
+
+                    // Imprimir datosRespondedores en la consola
+                    for (var clave in datosRespondedores) {
+                        if (datosRespondedores.hasOwnProperty(clave)) {
+                            console.log("Clave: " + clave + ", Valor: " + datosRespondedores[clave]);
+                        }
+                    }
+        
+                // Crea un elemento textarea y asigna el valor HTML
+                var textarea = document.getElementById("resultado");
+                textarea.value = "<h3>La consulta</h3><div class='comm-autor'>\n" + preguntador1 + "\n</div>\n\n<div class='triangle-border top'>\n"
+                     + pregunta1 + "\n</div><br />\n" +
+                "\n<h3>La solución destacada</h3><div class='triangle-border'>\n" + datosRespuestas['respuesta1'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-1'] +
+                "\n</div><br /><h3>Otras respuestas</h3><div class='triangle-border'>\n" + datosRespuestas['respuesta2'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-2'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta3'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-3'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta4'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-4'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta5'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-5'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta6'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-6'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta7'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-7'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta8'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-8'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta9'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-9'] +
+                "\n</div><br /><br /><div class='triangle-border'>\n" + datosRespuestas['respuesta10'] + 
+                "\n</div><div class='comm-comm'>\n" + datosRespondedores['respondedor-10'] +
+                "\n</div><br /><br />"
+                ;
+            });
+        });
+        </script>
+
+        <!-- v2 script fetch ini -->
+        <script>
+            const loadJsonButton = document.getElementById('loadJsonButton');
+            const jsonResult = document.getElementById('jsonResult');
+      
+            loadJsonButton.addEventListener('click', () => {
+              const jsonUrl = document.getElementById('jsonUrl').value;
+      
+              if (!jsonUrl) {
+                alert('Por favor, ingrese una URL válida.');
+                return;
+              }
+      
+              fetch(jsonUrl)
+                .then((response) => {
+                  if (!response.ok) {
+                    throw new Error('No se pudo cargar el JSON.');
+                  }
+                  return response.json();
+                })
+                .then((data) => {
+                  jsonResult.textContent = JSON.stringify(data, null, 2);
+                })
+                .catch((error) => {
+                  jsonResult.textContent = 'Error: ' + error.message;
+                });
+            });
+          </script>
+        <!-- v2 script fetch fin -->
+    <!-- Script Generar HTML fin -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!--// EL QUE PREGUNTA
+     <div class='comm-autor'>
+    JuanaG
+   </div>
+   <div class='triangle-border top'>
+   contenido de lo que dijo
+   </div> 
+   
+   EL que responde
+
+<div class='triangle-border'>
+comentario aquí</div>
+<div class='comm-comm'>
+autor
+</div>
+   
+   //-->
